@@ -37,6 +37,10 @@
     return self;
 }
 
+//
+//	Retrieve AUD currency rate from fixer.io
+//  -> CAD, EUR, GBP, JPY, USD
+//------------------------------------------------------------------------------
 - (void)getCurrencyAUDRates:(UTGetCurrencyList)completionBlock {
     
     self.ratesList = nil;
@@ -54,6 +58,7 @@
                           NSDictionary *rates = responseJSON[@"rates"];
                           if ([base isEqualToString:@"AUD"] && DictionaryNotNull(rates)) {
                               
+                              // Parse and create UTRate Model
                               [responseJSON[@"rates"] enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
                                   if (NumberNotNull(obj)) {
                                       UTRate *rate = [UTRate createModelCurrency:key ratio:obj];
