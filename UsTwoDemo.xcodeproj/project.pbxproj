@@ -13,9 +13,10 @@
 		294E85A41BB3696800BF8FBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 294E85A21BB3696800BF8FBE /* Main.storyboard */; };
 		294E85A61BB3696800BF8FBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 294E85A51BB3696800BF8FBE /* Assets.xcassets */; };
 		294E85A91BB3696800BF8FBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 294E85A71BB3696800BF8FBE /* LaunchScreen.storyboard */; };
-		294E85B41BB3696800BF8FBE /* UsTwoDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 294E85B31BB3696800BF8FBE /* UsTwoDemoTests.m */; };
 		294E85BF1BB3696800BF8FBE /* UsTwoDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 294E85BE1BB3696800BF8FBE /* UsTwoDemoUITests.m */; };
 		296855971BB36BC700ECA70D /* UTRate.m in Sources */ = {isa = PBXBuildFile; fileRef = 296855961BB36BC700ECA70D /* UTRate.m */; settings = {ASSET_TAGS = (); }; };
+		2968559B1BB36E2800ECA70D /* UTWebservice.m in Sources */ = {isa = PBXBuildFile; fileRef = 2968559A1BB36E2800ECA70D /* UTWebservice.m */; settings = {ASSET_TAGS = (); }; };
+		2968559D1BB3702600ECA70D /* UTWebserviceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2968559C1BB3702600ECA70D /* UTWebserviceTests.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +48,6 @@
 		294E85A81BB3696800BF8FBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		294E85AA1BB3696800BF8FBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		294E85AF1BB3696800BF8FBE /* UsTwoDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UsTwoDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		294E85B31BB3696800BF8FBE /* UsTwoDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UsTwoDemoTests.m; sourceTree = "<group>"; };
 		294E85B51BB3696800BF8FBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		294E85BA1BB3696800BF8FBE /* UsTwoDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UsTwoDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		294E85BE1BB3696800BF8FBE /* UsTwoDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UsTwoDemoUITests.m; sourceTree = "<group>"; };
@@ -55,6 +55,9 @@
 		296855951BB36BC700ECA70D /* UTRate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTRate.h; sourceTree = "<group>"; };
 		296855961BB36BC700ECA70D /* UTRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTRate.m; sourceTree = "<group>"; };
 		296855981BB36C3300ECA70D /* Constantes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constantes.h; sourceTree = "<group>"; };
+		296855991BB36E2800ECA70D /* UTWebservice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTWebservice.h; sourceTree = "<group>"; };
+		2968559A1BB36E2800ECA70D /* UTWebservice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTWebservice.m; sourceTree = "<group>"; };
+		2968559C1BB3702600ECA70D /* UTWebserviceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UTWebserviceTests.m; path = ../../UsTwoDemoTests/UTWebserviceTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,7 +136,6 @@
 		294E85B21BB3696800BF8FBE /* UsTwoDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				294E85B31BB3696800BF8FBE /* UsTwoDemoTests.m */,
 				294E85B51BB3696800BF8FBE /* Info.plist */,
 			);
 			path = UsTwoDemoTests;
@@ -160,6 +162,9 @@
 			children = (
 				296855951BB36BC700ECA70D /* UTRate.h */,
 				296855961BB36BC700ECA70D /* UTRate.m */,
+				296855991BB36E2800ECA70D /* UTWebservice.h */,
+				2968559A1BB36E2800ECA70D /* UTWebservice.m */,
+				2968559C1BB3702600ECA70D /* UTWebserviceTests.m */,
 			);
 			name = Webservice/Model;
 			path = Webservice;
@@ -306,6 +311,7 @@
 				294E85A11BB3696800BF8FBE /* ViewController.m in Sources */,
 				294E859E1BB3696800BF8FBE /* AppDelegate.m in Sources */,
 				294E859B1BB3696800BF8FBE /* main.m in Sources */,
+				2968559B1BB36E2800ECA70D /* UTWebservice.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,7 +319,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				294E85B41BB3696800BF8FBE /* UsTwoDemoTests.m in Sources */,
+				2968559D1BB3702600ECA70D /* UTWebserviceTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
