@@ -10,4 +10,21 @@
 
 @implementation NSNumber (CurrencyFormater)
 
+//
+//  Return a string formated to a currency format
+//  --> $230.00
+//------------------------------------------------------------------------------
+
+- (NSString *)stringCurrency:(NSString*)currencyCode {
+    
+    NSLocale *locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_AU"];
+    NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
+    
+    [numberFormatter setLocale:locale];
+    [numberFormatter setNumberStyle:NSNumberFormatterCurrencyStyle];
+    [numberFormatter setCurrencyCode:currencyCode];
+    
+    return [numberFormatter stringFromNumber:self];
+}
+
 @end

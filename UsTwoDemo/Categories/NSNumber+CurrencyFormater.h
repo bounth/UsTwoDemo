@@ -10,4 +10,6 @@
 
 @interface NSNumber (CurrencyFormater)
 
+- (NSString *)stringCurrency:(NSString*)currencyCode;
+
 @end
