@@ -12,6 +12,7 @@
 #import "UTWebservice.h"
 #import "UTConverter.h"
 #import "UTRate.h"
+#import "NSNumber+CurrencyFormater.h"
 
 @interface UTAUDConverterViewController ()<UITextFieldDelegate, UIAlertViewDelegate>
 
@@ -19,9 +20,11 @@
 @property (nonatomic, weak) IBOutlet UILabel *labelConverted;
 @property (nonatomic, weak) IBOutlet UIButton *buttonDismiss;
 @property (nonatomic, weak) IBOutlet UICollectionView *collectionView;
+
 @property (nonatomic, strong) NSArray *listRates;
 @property (nonatomic, strong) UTPickerCollectionDataSource *pickerDataSource;
-
+@property (nonatomic) NSInteger currentCurrency;
+@property (nonatomic) double amountAUD;
 @end
 
 @implementation UTAUDConverterViewController
@@ -31,6 +34,8 @@
     
     self.fieldAUD.text = nil;
     self.labelConverted.text = nil;
+    self.currentCurrency = 0;
+    self.amountAUD = 0.0;
     
     self.pickerDataSource = [UTPickerCollectionDataSource new];
     self.collectionView.dataSource = self.pickerDataSource;
@@ -39,19 +44,25 @@
     [self updateAUDCurrency];
 }
 
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-}
-
 #pragma mark - IBAction
 - (IBAction)didClickOnDismissButton:(id)sender {
     [self.fieldAUD resignFirstResponder];
 }
 
 #pragma mark - UITextField Delegate
-- (void)textFieldDidEndEditing:(UITextField *)textField {
-    self.labelConverted.text = textField.text;
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    textField.text = nil;
 }
+
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+    self.amountAUD = textField.text.doubleValue;
+    
+    textField.text = [@(textField.text.doubleValue) stringCurrencyAUD];
+    
+    [self convertAUDAmount];
+}
+
 
 #pragma mark - UIAlertView Delegate
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
@@ -75,13 +86,17 @@
     //  Return the current index page after a scroll
     //--------------------------------------------------------------------------
     [self.pickerDataSource pageIndexDidUpdate:^(NSInteger index) {
-        NSLog(@"%li", (long)index);
+        self.currentCurrency = index;
+        [self convertAUDAmount];
     }];
     
     [self.collectionView reloadData];
 }
 
 #pragma mark - Webservice
+//
+//  Update AUD rate from webservice
+//------------------------------------------------------------------------------
 - (void)updateAUDCurrency {
     [[UTWebservice sharedManager] getCurrencyAUDRates:^(NSArray<UTRate *> *listRates) {
         self.listRates = listRates;
@@ -96,6 +111,12 @@
                               otherButtonTitles:nil] show];
         }
     }];
+}
+
+#pragma mark - Converter
+- (void)convertAUDAmount {
+    UTRate *currentRate = self.listRates[self.currentCurrency];
+    self.labelConverted.text = [UTConverter stringCurrencyAmount:self.amountAUD toCurrencyRate:currentRate];
 }
 
 @end
