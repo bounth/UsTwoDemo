@@ -12,7 +12,7 @@
 
 @interface UTWebservice ()
 
-@property (nonatomic, strong) NSArray <UTRate *> *ratesList;
+@property (nonatomic, copy) NSArray <UTRate *> *ratesList;
 
 - (instancetype)init NS_DESIGNATED_INITIALIZER;
 
