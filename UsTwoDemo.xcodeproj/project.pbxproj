@@ -19,6 +19,8 @@
 		2968559D1BB3702600ECA70D /* UTWebserviceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2968559C1BB3702600ECA70D /* UTWebserviceTests.m */; settings = {ASSET_TAGS = (); }; };
 		296855A01BB3729A00ECA70D /* NSNumber+CurrencyFormater.m in Sources */ = {isa = PBXBuildFile; fileRef = 2968559F1BB3729A00ECA70D /* NSNumber+CurrencyFormater.m */; settings = {ASSET_TAGS = (); }; };
 		296855A21BB373B000ECA70D /* CurrencyFormaterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 296855A11BB373B000ECA70D /* CurrencyFormaterTests.m */; settings = {ASSET_TAGS = (); }; };
+		296855A51BB3769600ECA70D /* UTConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 296855A41BB3769600ECA70D /* UTConverter.m */; settings = {ASSET_TAGS = (); }; };
+		296855A71BB3774600ECA70D /* UTConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 296855A61BB3774600ECA70D /* UTConverterTests.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,9 @@
 		2968559E1BB3729A00ECA70D /* NSNumber+CurrencyFormater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+CurrencyFormater.h"; sourceTree = "<group>"; };
 		2968559F1BB3729A00ECA70D /* NSNumber+CurrencyFormater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+CurrencyFormater.m"; sourceTree = "<group>"; };
 		296855A11BB373B000ECA70D /* CurrencyFormaterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CurrencyFormaterTests.m; path = ../../UsTwoDemoTests/CurrencyFormaterTests.m; sourceTree = "<group>"; };
+		296855A31BB3769600ECA70D /* UTConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTConverter.h; sourceTree = "<group>"; };
+		296855A41BB3769600ECA70D /* UTConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTConverter.m; sourceTree = "<group>"; };
+		296855A61BB3774600ECA70D /* UTConverterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UTConverterTests.m; path = ../../UsTwoDemoTests/UTConverterTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +178,9 @@
 				296855991BB36E2800ECA70D /* UTWebservice.h */,
 				2968559A1BB36E2800ECA70D /* UTWebservice.m */,
 				2968559C1BB3702600ECA70D /* UTWebserviceTests.m */,
+				296855A31BB3769600ECA70D /* UTConverter.h */,
+				296855A41BB3769600ECA70D /* UTConverter.m */,
+				296855A61BB3774600ECA70D /* UTConverterTests.m */,
 			);
 			name = Webservice/Model;
 			path = Webservice;
@@ -318,6 +326,7 @@
 				296855971BB36BC700ECA70D /* UTRate.m in Sources */,
 				294E85A11BB3696800BF8FBE /* ViewController.m in Sources */,
 				294E859E1BB3696800BF8FBE /* AppDelegate.m in Sources */,
+				296855A51BB3769600ECA70D /* UTConverter.m in Sources */,
 				294E859B1BB3696800BF8FBE /* main.m in Sources */,
 				296855A01BB3729A00ECA70D /* NSNumber+CurrencyFormater.m in Sources */,
 				2968559B1BB36E2800ECA70D /* UTWebservice.m in Sources */,
@@ -328,6 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				296855A71BB3774600ECA70D /* UTConverterTests.m in Sources */,
 				296855A21BB373B000ECA70D /* CurrencyFormaterTests.m in Sources */,
 				2968559D1BB3702600ECA70D /* UTWebserviceTests.m in Sources */,
 			);
