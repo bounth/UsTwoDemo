@@ -35,11 +35,15 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
-    [self.pickerDataSource refreshPickerWithNumberOfItems:5
-                                      collectionViewWidth:self.collectionView.frame.size.width
-                                            customizeCell:^UICollectionViewCell *(UICollectionViewCell *cell, NSInteger index) {
+    [self.pickerDataSource refreshWithNumberOfItems:5
+                                collectionViewWidth:self.collectionView.frame.size.width
+                                      customizeCell:^UICollectionViewCell *(UICollectionViewCell *cell, NSInteger index) {
                                           return cell;
                                       }];
+    [self.pickerDataSource pageIndexDidUpdate:^(NSInteger index) {
+        NSLog(@"%li", (long)index);
+    }];
+    
     [self.collectionView reloadData];
 }
 
