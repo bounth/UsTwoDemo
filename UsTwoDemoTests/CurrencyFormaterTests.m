@@ -27,17 +27,17 @@
 
 - (void)testCurrencyFormatAUD_Credit {
     NSNumber *amount = @345;
-    XCTAssertEqualObjects([amount stringCurrency:@"AUD"], @"$345.00");
+    XCTAssertEqualObjects([amount stringCurrencyAUD], @"$345.00");
 }
 
 - (void)testCurrencyFormatAUD_Debit {
     NSNumber *amount = @(-345);
-    XCTAssertEqualObjects([amount stringCurrency:@"AUD"], @"-$345.00");
+    XCTAssertEqualObjects([amount stringCurrencyAUD], @"-$345.00");
 }
 
 - (void)testCurrencyFormatAUD_Cents {
     NSNumber *amount = @345.673;
-    XCTAssertEqualObjects([amount stringCurrency:@"AUD"], @"$345.67");
+    XCTAssertEqualObjects([amount stringCurrencyAUD], @"$345.67");
 }
 
 - (void)testCurrencyFormatEUR_Credit {

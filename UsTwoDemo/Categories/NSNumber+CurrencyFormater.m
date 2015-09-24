@@ -15,6 +15,10 @@
 //  --> $230.00
 //------------------------------------------------------------------------------
 
+- (NSString *)stringCurrencyAUD {
+    return [self stringCurrency:@"AUD"];
+}
+
 - (NSString *)stringCurrency:(NSString*)currencyCode {
     
     NSLocale *locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_AU"];
