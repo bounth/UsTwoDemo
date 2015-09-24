@@ -9,11 +9,9 @@
 /* Begin PBXBuildFile section */
 		294E859B1BB3696800BF8FBE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 294E859A1BB3696800BF8FBE /* main.m */; };
 		294E859E1BB3696800BF8FBE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 294E859D1BB3696800BF8FBE /* AppDelegate.m */; };
-		294E85A11BB3696800BF8FBE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 294E85A01BB3696800BF8FBE /* ViewController.m */; };
 		294E85A41BB3696800BF8FBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 294E85A21BB3696800BF8FBE /* Main.storyboard */; };
 		294E85A61BB3696800BF8FBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 294E85A51BB3696800BF8FBE /* Assets.xcassets */; };
 		294E85A91BB3696800BF8FBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 294E85A71BB3696800BF8FBE /* LaunchScreen.storyboard */; };
-		294E85BF1BB3696800BF8FBE /* UsTwoDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 294E85BE1BB3696800BF8FBE /* UsTwoDemoUITests.m */; };
 		296855971BB36BC700ECA70D /* UTRate.m in Sources */ = {isa = PBXBuildFile; fileRef = 296855961BB36BC700ECA70D /* UTRate.m */; settings = {ASSET_TAGS = (); }; };
 		2968559B1BB36E2800ECA70D /* UTWebservice.m in Sources */ = {isa = PBXBuildFile; fileRef = 2968559A1BB36E2800ECA70D /* UTWebservice.m */; settings = {ASSET_TAGS = (); }; };
 		2968559D1BB3702600ECA70D /* UTWebserviceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2968559C1BB3702600ECA70D /* UTWebserviceTests.m */; settings = {ASSET_TAGS = (); }; };
@@ -21,6 +19,8 @@
 		296855A21BB373B000ECA70D /* CurrencyFormaterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 296855A11BB373B000ECA70D /* CurrencyFormaterTests.m */; settings = {ASSET_TAGS = (); }; };
 		296855A51BB3769600ECA70D /* UTConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 296855A41BB3769600ECA70D /* UTConverter.m */; settings = {ASSET_TAGS = (); }; };
 		296855A71BB3774600ECA70D /* UTConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 296855A61BB3774600ECA70D /* UTConverterTests.m */; settings = {ASSET_TAGS = (); }; };
+		296855AA1BB3834E00ECA70D /* UTAUDConverterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 296855A91BB3834E00ECA70D /* UTAUDConverterViewController.m */; settings = {ASSET_TAGS = (); }; };
+		296855AC1BB3836800ECA70D /* UTAUDConverterViewControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 296855AB1BB3836800ECA70D /* UTAUDConverterViewControllerUITests.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +45,6 @@
 		294E859A1BB3696800BF8FBE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		294E859C1BB3696800BF8FBE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		294E859D1BB3696800BF8FBE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		294E859F1BB3696800BF8FBE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		294E85A01BB3696800BF8FBE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		294E85A31BB3696800BF8FBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		294E85A51BB3696800BF8FBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		294E85A81BB3696800BF8FBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,7 +52,6 @@
 		294E85AF1BB3696800BF8FBE /* UsTwoDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UsTwoDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		294E85B51BB3696800BF8FBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		294E85BA1BB3696800BF8FBE /* UsTwoDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UsTwoDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		294E85BE1BB3696800BF8FBE /* UsTwoDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UsTwoDemoUITests.m; sourceTree = "<group>"; };
 		294E85C01BB3696800BF8FBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		296855951BB36BC700ECA70D /* UTRate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTRate.h; sourceTree = "<group>"; };
 		296855961BB36BC700ECA70D /* UTRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTRate.m; sourceTree = "<group>"; };
@@ -68,6 +65,9 @@
 		296855A31BB3769600ECA70D /* UTConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTConverter.h; sourceTree = "<group>"; };
 		296855A41BB3769600ECA70D /* UTConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTConverter.m; sourceTree = "<group>"; };
 		296855A61BB3774600ECA70D /* UTConverterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UTConverterTests.m; path = ../../UsTwoDemoTests/UTConverterTests.m; sourceTree = "<group>"; };
+		296855A81BB3834E00ECA70D /* UTAUDConverterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTAUDConverterViewController.h; sourceTree = "<group>"; };
+		296855A91BB3834E00ECA70D /* UTAUDConverterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTAUDConverterViewController.m; sourceTree = "<group>"; };
+		296855AB1BB3836800ECA70D /* UTAUDConverterViewControllerUITests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UTAUDConverterViewControllerUITests.m; path = ../../UsTwoDemoUITests/UTAUDConverterViewControllerUITests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,8 +123,6 @@
 				294E85A21BB3696800BF8FBE /* Main.storyboard */,
 				294E859C1BB3696800BF8FBE /* AppDelegate.h */,
 				294E859D1BB3696800BF8FBE /* AppDelegate.m */,
-				294E859F1BB3696800BF8FBE /* ViewController.h */,
-				294E85A01BB3696800BF8FBE /* ViewController.m */,
 				296855981BB36C3300ECA70D /* Constantes.h */,
 				296855931BB36B0E00ECA70D /* Webservice/Model */,
 				296855941BB36B0E00ECA70D /* ViewControllers */,
@@ -154,7 +152,6 @@
 		294E85BD1BB3696800BF8FBE /* UsTwoDemoUITests */ = {
 			isa = PBXGroup;
 			children = (
-				294E85BE1BB3696800BF8FBE /* UsTwoDemoUITests.m */,
 				294E85C01BB3696800BF8FBE /* Info.plist */,
 			);
 			path = UsTwoDemoUITests;
@@ -189,6 +186,9 @@
 		296855941BB36B0E00ECA70D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				296855A81BB3834E00ECA70D /* UTAUDConverterViewController.h */,
+				296855A91BB3834E00ECA70D /* UTAUDConverterViewController.m */,
+				296855AB1BB3836800ECA70D /* UTAUDConverterViewControllerUITests.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -324,8 +324,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				296855971BB36BC700ECA70D /* UTRate.m in Sources */,
-				294E85A11BB3696800BF8FBE /* ViewController.m in Sources */,
 				294E859E1BB3696800BF8FBE /* AppDelegate.m in Sources */,
+				296855AA1BB3834E00ECA70D /* UTAUDConverterViewController.m in Sources */,
 				296855A51BB3769600ECA70D /* UTConverter.m in Sources */,
 				294E859B1BB3696800BF8FBE /* main.m in Sources */,
 				296855A01BB3729A00ECA70D /* NSNumber+CurrencyFormater.m in Sources */,
@@ -347,7 +347,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				294E85BF1BB3696800BF8FBE /* UsTwoDemoUITests.m in Sources */,
+				296855AC1BB3836800ECA70D /* UTAUDConverterViewControllerUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
