@@ -7,6 +7,8 @@
 //
 
 #import "UTAUDConverterViewController.h"
+#import "UTPickerCollectionDataSource.h"
+
 #import "UTConverter.h"
 
 @interface UTAUDConverterViewController ()<UITextFieldDelegate>
@@ -14,6 +16,9 @@
 @property (nonatomic, weak) IBOutlet UITextField *fieldAUD;
 @property (nonatomic, weak) IBOutlet UILabel *labelConverted;
 @property (nonatomic, weak) IBOutlet UIButton *buttonDismiss;
+@property (nonatomic, weak) IBOutlet UICollectionView *collectionView;
+
+@property (nonatomic, strong) UTPickerCollectionDataSource *pickerDataSource;
 
 @end
 
@@ -22,6 +27,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.pickerDataSource = [UTPickerCollectionDataSource new];
+    self.collectionView.dataSource = self.pickerDataSource;
+    self.collectionView.delegate = self.pickerDataSource;
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    [self.pickerDataSource refreshPickerWithNumberOfItems:5
+                                      collectionViewWidth:self.collectionView.frame.size.width
+                                            customizeCell:^UICollectionViewCell *(UICollectionViewCell *cell, NSInteger index) {
+                                          return cell;
+                                      }];
+    [self.collectionView reloadData];
 }
 
 - (IBAction)didClickOnDismissButton:(id)sender {
