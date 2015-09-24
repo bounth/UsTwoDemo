@@ -6,7 +6,7 @@
 //  Copyright © 2015 Marc Bounthong. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
 @interface NSNumber (CurrencyFormater)
 

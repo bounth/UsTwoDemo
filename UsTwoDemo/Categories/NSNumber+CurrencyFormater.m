@@ -11,7 +11,7 @@
 @implementation NSNumber (CurrencyFormater)
 
 //
-//  Return a string formated to a currency format
+//  Return a string currency format
 //  --> $230.00
 //------------------------------------------------------------------------------
 
