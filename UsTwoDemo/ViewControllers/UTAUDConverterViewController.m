@@ -8,8 +8,10 @@
 
 #import "UTAUDConverterViewController.h"
 #import "UTPickerCollectionDataSource.h"
+#import "UTPickerCurrencyCell.h"
 #import "UTWebservice.h"
 #import "UTConverter.h"
+#import "UTRate.h"
 
 @interface UTAUDConverterViewController ()<UITextFieldDelegate, UIAlertViewDelegate>
 
@@ -26,6 +28,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.fieldAUD.text = nil;
+    self.labelConverted.text = nil;
     
     self.pickerDataSource = [UTPickerCollectionDataSource new];
     self.collectionView.dataSource = self.pickerDataSource;
@@ -55,11 +60,20 @@
 
 #pragma mark - UTPickerCollection DataSource
 - (void)refreshPicker {
+    //  Replace the UICollectionView required delegate by block
+    //--------------------------------------------------------------------------
     [self.pickerDataSource refreshWithNumberOfItems:self.listRates.count
                                 collectionViewWidth:self.collectionView.frame.size.width
                                       customizeCell:^UICollectionViewCell *(UICollectionViewCell *cell, NSInteger index) {
+                                          
+                                          UTRate *rate = self.listRates[index];
+                                          
+                                          [(UTPickerCurrencyCell*)cell fillCellWithCurrency:rate.currency];
                                           return cell;
                                       }];
+    
+    //  Return the current index page after a scroll
+    //--------------------------------------------------------------------------
     [self.pickerDataSource pageIndexDidUpdate:^(NSInteger index) {
         NSLog(@"%li", (long)index);
     }];

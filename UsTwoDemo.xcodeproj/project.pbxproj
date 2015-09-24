@@ -22,6 +22,7 @@
 		296855AA1BB3834E00ECA70D /* UTAUDConverterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 296855A91BB3834E00ECA70D /* UTAUDConverterViewController.m */; settings = {ASSET_TAGS = (); }; };
 		296855AC1BB3836800ECA70D /* UTAUDConverterViewControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 296855AB1BB3836800ECA70D /* UTAUDConverterViewControllerUITests.m */; settings = {ASSET_TAGS = (); }; };
 		296855AF1BB38B8100ECA70D /* UTPickerCollectionDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 296855AE1BB38B8100ECA70D /* UTPickerCollectionDataSource.m */; settings = {ASSET_TAGS = (); }; };
+		296855B21BB3A96100ECA70D /* UTPickerCurrencyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 296855B11BB3A96100ECA70D /* UTPickerCurrencyCell.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,8 @@
 		296855AB1BB3836800ECA70D /* UTAUDConverterViewControllerUITests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UTAUDConverterViewControllerUITests.m; path = ../../UsTwoDemoUITests/UTAUDConverterViewControllerUITests.m; sourceTree = "<group>"; };
 		296855AD1BB38B8100ECA70D /* UTPickerCollectionDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTPickerCollectionDataSource.h; sourceTree = "<group>"; };
 		296855AE1BB38B8100ECA70D /* UTPickerCollectionDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTPickerCollectionDataSource.m; sourceTree = "<group>"; };
+		296855B01BB3A96100ECA70D /* UTPickerCurrencyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTPickerCurrencyCell.h; sourceTree = "<group>"; };
+		296855B11BB3A96100ECA70D /* UTPickerCurrencyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTPickerCurrencyCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +197,8 @@
 				296855AB1BB3836800ECA70D /* UTAUDConverterViewControllerUITests.m */,
 				296855AD1BB38B8100ECA70D /* UTPickerCollectionDataSource.h */,
 				296855AE1BB38B8100ECA70D /* UTPickerCollectionDataSource.m */,
+				296855B01BB3A96100ECA70D /* UTPickerCurrencyCell.h */,
+				296855B11BB3A96100ECA70D /* UTPickerCurrencyCell.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -328,6 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				296855B21BB3A96100ECA70D /* UTPickerCurrencyCell.m in Sources */,
 				296855971BB36BC700ECA70D /* UTRate.m in Sources */,
 				294E859E1BB3696800BF8FBE /* AppDelegate.m in Sources */,
 				296855AA1BB3834E00ECA70D /* UTAUDConverterViewController.m in Sources */,
